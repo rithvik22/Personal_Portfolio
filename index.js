@@ -13,6 +13,8 @@ var typed = new Typed(".tpp", {
     loop: true
 });
 
+
+// This is for Chatbot!!!
 document.addEventListener('DOMContentLoaded', function() {
     const chatInput = document.getElementById('chat-input');
     const chatSend = document.getElementById('chat-send');

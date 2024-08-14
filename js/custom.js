@@ -1,9 +1,6 @@
 (function() {
 	'use strict';
 
-	/*----------------------------------------
-		Detect Mobile
-	----------------------------------------*/
 	var isMobile = {
 		Android: function() {
 			return navigator.userAgent.match(/Android/i);
@@ -26,7 +23,6 @@
 	};
 
 
-	// navigation
 	var OnePageNav = function() {
 		var navToggler = $('.navbar-toggler');
 		$(".smoothscroll[href^='#'], #pb-navbar ul li a[href^='#']").on('click', function(e) {
