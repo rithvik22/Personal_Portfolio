@@ -13,6 +13,21 @@ var typed = new Typed(".tpp", {
     loop: true
 });
 
+function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var message = document.getElementById("message").value;
+
+    // Basic validation for demonstration purposes
+    if (name === "" || email === "" || phone === "" || message === "") {
+        alert("All fields must be filled out");
+        return false; // Prevents the form from submitting
+    }
+
+    // If all validations pass
+    return true;
+}
 
 // This is for Chatbot!!!
 document.addEventListener('DOMContentLoaded', function() {
