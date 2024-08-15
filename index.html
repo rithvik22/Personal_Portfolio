@@ -166,20 +166,24 @@
                 </div>
 
                 <div class="col-md-7 mb-5 mb-md-0">
-                    <form action="" class="site-form">
+                    <form action="" class="site-form" onsubmit="return validateForm()">
                         <h3 class="mb-5">Get In Touch</h3>
                         <div class="form-group">
-                            <input type="text" class="form-control px-3 py-4" placeholder="Your Name">
+                            <input type="text" class="form-control px-3 py-4" placeholder="Your Name" id="name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control px-3 py-4" placeholder="Your Email">
+                            <input type="email" class="form-control px-3 py-4" placeholder="Your Email" id="email" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control px-3 py-4" placeholder="Your Phone">
+                           
+                            <input type="tel" id="phone" name="phone" class="form-control" 
+                                   pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$" 
+                                   placeholder="Your Phone 123-456-7890" 
+                                   required>
+                
                         </div>
                         <div class="form-group mb-5">
-                            <textarea class="form-control px-3 py-4" cols="30" rows="10"
-                                placeholder="Write a Message"></textarea>
+                            <textarea class="form-control px-3 py-4" cols="30" rows="10" placeholder="Write a Message" id="message" required></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary  px-4 py-3" value="Send Message">
