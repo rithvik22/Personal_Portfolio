@@ -1,10 +1,17 @@
-
 # Personal Portfolio
 
-Welcome to my personal portfolio! 
-This website showcases my skills, projects, and experiences as a software developer. 
-Here, you can explore my work, view my skills and get in touch with me.
+Portfolio for **Rithvik Reddy Velapati** — Lead Full-Stack Developer.
 
-## Live Demo
+## Live
 
-You can view the live version of my portfolio at: [https://rithvik22.github.io/Personal_Portfolio/]
+[https://rithvik22.github.io/Personal_Portfolio/](https://rithvik22.github.io/Personal_Portfolio/)
+
+## Local preview
+
+Open `index.html` in a browser, or from this folder:
+
+```bash
+python3 -m http.server 8080
+```
+
+Then visit `http://localhost:8080`.
