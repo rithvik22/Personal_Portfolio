@@ -4,7 +4,7 @@ Portfolio for **Rithvik Reddy Velapati** — Lead Full-Stack Developer.
 
 ## Live
 
-[https://rithvik22.github.io/Personal_Portfolio/](https://rithvik22.github.io/Personal_Portfolio/)
+https://rithvik22.github.io/Personal_Portfolio/
 
 ## Local preview
 
