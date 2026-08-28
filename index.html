@@ -326,9 +326,48 @@
     </div>
   </footer>
 
+  <div class="chatbot" id="chatbot" aria-live="polite">
+    <button class="chatbot-toggle" id="chatbot-toggle" type="button" aria-expanded="false" aria-controls="chatbot-panel" aria-label="Open chat assistant">
+      <span class="chatbot-toggle-icon chatbot-toggle-icon--open" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </span>
+      <span class="chatbot-toggle-icon chatbot-toggle-icon--close" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </span>
+    </button>
+
+    <div class="chatbot-panel" id="chatbot-panel" aria-hidden="true">
+      <header class="chatbot-header">
+        <div>
+          <p class="chatbot-title">Ask about Rithvik</p>
+          <p class="chatbot-sub">Skills · experience · projects · contact</p>
+        </div>
+        <button class="chatbot-close" id="chatbot-close" type="button" aria-label="Close chat">×</button>
+      </header>
+
+      <div class="chatbot-messages" id="chatbot-messages" role="log" aria-relevant="additions"></div>
+
+      <div class="chatbot-chips" id="chatbot-chips">
+        <button type="button" data-prompt="What is your experience?">Experience</button>
+        <button type="button" data-prompt="What are your skills?">Skills</button>
+        <button type="button" data-prompt="Tell me about Hire Packet">Hire Packet</button>
+        <button type="button" data-prompt="How can I contact you?">Contact</button>
+      </div>
+
+      <form class="chatbot-form" id="chatbot-form">
+        <label class="visually-hidden" for="chatbot-input">Message</label>
+        <input id="chatbot-input" type="text" placeholder="Ask anything…" autocomplete="off" maxlength="400">
+        <button type="submit" aria-label="Send message">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
   <script src="portfolio.js" defer></script>
+  <script src="chatbot.js" defer></script>
 </body>
 </html>
