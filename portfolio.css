@@ -746,7 +746,7 @@ body.has-cursor .cursor.is-ready {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center 15%;
   transform: scale(1.15);
   will-change: transform;
   filter: saturate(0.92) contrast(1.03);
